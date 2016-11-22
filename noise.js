@@ -4,7 +4,7 @@ var play = function(note) {
 };
 
 $(document).ready( function() {
-  $('.instrument').on('click', 'button', function(event) {
+  $('.instrument').on('click', 'button', function() {
     var note = $(this).html();
     var sound = $('#' + note + 'Audio')[0];
     play(sound);
